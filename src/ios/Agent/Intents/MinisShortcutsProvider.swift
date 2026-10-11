@@ -117,6 +117,18 @@ struct MinisShortcutsProvider: AppShortcutsProvider {
             shortTitle: "Open Session",
             systemImageName: "arrow.up.right.square"
         )
+        // Voice entry for the Action Button / Back Tap: opens the app and
+        // starts listening; the spoken prompt lands in the composer and
+        // sending stays a tap. See VoicePromptIntent.
+        AppShortcut(
+            intent: VoicePromptIntent(),
+            phrases: [
+                "Voice prompt to \(.applicationName)",
+                "Talk to \(.applicationName) by voice",
+            ],
+            shortTitle: "Voice Prompt",
+            systemImageName: "mic.fill"
+        )
         // [T-ios-remove-open-webapp-shortcut-intent] OpenWebAppIntent removed —
         // the Home-Screen WebApp tile path was replaced by another mechanism,
         // so the Shortcuts/AppIntents action is no longer registered.

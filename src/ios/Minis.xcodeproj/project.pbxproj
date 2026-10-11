@@ -410,6 +410,8 @@
 		E5T00000A /* RetryRunIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5T00001A /* RetryRunIntent.swift */; };
 		E5T00000B /* UserMessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5T00001B /* UserMessageEntity.swift */; };
 		E5T0000A1 /* AskMinisIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5T0000A2 /* AskMinisIntent.swift */; };
+		E5T0000B1 /* VoicePromptIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5T0000B2 /* VoicePromptIntent.swift */; };
+		E5T0000C1 /* VoicePromptRequestStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5T0000C2 /* VoicePromptRequestStore.swift */; };
 		E5TLC0001 /* ThinkingLevelCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5TLC0002 /* ThinkingLevelCatalog.swift */; };
 		E5TLS0001 /* ToolsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5TLS0011 /* ToolsSettingsView.swift */; };
 		E5TRC001 /* ThinkingRuleCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5TRC002 /* ThinkingRuleCoding.swift */; };
@@ -1133,6 +1135,8 @@
 		E5T00001A /* RetryRunIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryRunIntent.swift; sourceTree = "<group>"; };
 		E5T00001B /* UserMessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMessageEntity.swift; sourceTree = "<group>"; };
 		E5T0000A2 /* AskMinisIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMinisIntent.swift; sourceTree = "<group>"; };
+		E5T0000B2 /* VoicePromptIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicePromptIntent.swift; sourceTree = "<group>"; };
+		E5T0000C2 /* VoicePromptRequestStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicePromptRequestStore.swift; sourceTree = "<group>"; };
 		E5TLC0002 /* ThinkingLevelCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkingLevelCatalog.swift; sourceTree = "<group>"; };
 		E5TLS0011 /* ToolsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsSettingsView.swift; sourceTree = "<group>"; };
 		E5TRC002 /* ThinkingRuleCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThinkingRuleCoding.swift; path = Thinking/ThinkingRuleCoding.swift; sourceTree = "<group>"; };
@@ -2010,6 +2014,8 @@
 				E5T000012 /* ListSessionsIntent.swift */,
 				E5T000013 /* SendPromptIntent.swift */,
 				E5T0000A2 /* AskMinisIntent.swift */,
+				E5T0000B2 /* VoicePromptIntent.swift */,
+				E5T0000C2 /* VoicePromptRequestStore.swift */,
 				E5F200016 /* ModelSelectionEntity.swift */,
 				E5T000014 /* OpenSessionIntent.swift */,
 				E5T000015 /* MinisShortcutsProvider.swift */,
@@ -2922,6 +2928,8 @@
 				E5T000002 /* ListSessionsIntent.swift in Sources */,
 				E5T000003 /* SendPromptIntent.swift in Sources */,
 				E5T0000A1 /* AskMinisIntent.swift in Sources */,
+				E5T0000B1 /* VoicePromptIntent.swift in Sources */,
+				E5T0000C1 /* VoicePromptRequestStore.swift in Sources */,
 				E5F200006 /* ModelSelectionEntity.swift in Sources */,
 				E5T000004 /* OpenSessionIntent.swift in Sources */,
 				E5W000031 /* WebAppShortcut.swift in Sources */,

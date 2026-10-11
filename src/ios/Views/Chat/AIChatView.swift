@@ -955,6 +955,21 @@ struct AIChatView: View {
             // the user can keep typing without an extra tap on the field.
             inputFocused = true
         }
+        .onReceive(VoicePromptRequestStore.shared.$pending) { _ in
+            // The Action Button's voice prompt: the intent leaves a request
+            // in the store (on a cold start it runs before the window
+            // exists) and the chat on screen takes it — the mic button's
+            // path, so there is one recording path and one permission flow.
+            // A read-only chat cannot be typed in, so it cannot be spoken to
+            // either; the press is dropped.
+            guard !isReadOnly,
+                  VoicePromptRequestStore.shared.take(for: vm.sessionId) else { return }
+            VoicePromptRequestStore.listen(with: voiceVM) {
+                vm.voiceUsedInComposition = true
+                VoiceModePreference.shared.enteredFromText = true
+                withAnimation(.easeInOut(duration: 0.2)) { voiceInputActive = true }
+            }
+        }
         .modifier(ChatInputAppendListener(vm: vm, inputFocused: $inputFocused))
         .modifier(RerunFromToolBlockListener(vm: vm))
         .fullScreenCover(item: $previewVideoFile) { fileURL in
